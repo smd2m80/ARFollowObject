@@ -38,6 +38,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a new scene
         let scene = SCNScene(named: "main.scn")!
+//        let testScene = SCNScene(named: "art.scnassets/desk.scn")!
         
         // Set the scene to the view
         sceneView.scene = scene
@@ -78,7 +79,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 
                 nodeDic[nodeName] = nil
             } else {
-                // Save Node Position
+                // Save Position
                 nodeDic[nodeName] = followNode.simdWorldTransform
                 
                 cameraNode.addChildNode(followNode)
@@ -106,7 +107,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             if(nodeInfo != nil){
                 material.emission.contents = UIColor.white
             }else{
-                material.emission.contents = UIColor.red
+                material.emission.contents = UIColor.blue
             }
             
             SCNTransaction.commit()
