@@ -28,6 +28,7 @@
 		9F724E1422CBB6F80044B3CE /* BarChair.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9F724E1322CBB6F80044B3CE /* BarChair.dae */; };
 		9F724E1522CBC4E50044B3CE /* main.scn in Resources */ = {isa = PBXBuildFile; fileRef = 9F724E1722CBC4E50044B3CE /* main.scn */; };
 		9FF6CF3222CBD2F10098098E /* mokume.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF3122CBD2F00098098E /* mokume.jpg */; };
+		9FF6CF3422CBDCB20098098E /* plant.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF3322CBDCB10098098E /* plant.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		9F724E1322CBB6F80044B3CE /* BarChair.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = BarChair.dae; path = ../../../Downloads/BarChair.dae; sourceTree = "<group>"; };
 		9F724E1622CBC4E50044B3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Base; path = Base.lproj/main.scn; sourceTree = "<group>"; };
 		9FF6CF3122CBD2F00098098E /* mokume.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mokume.jpg; path = ../../../Downloads/mokume.jpg; sourceTree = "<group>"; };
+		9FF6CF3322CBDCB10098098E /* plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plant.png; path = ../../../Downloads/plant.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				9F41ECBD22CBA2A70023B89D /* table.png */,
 				829AD5E221CB7F5700F31E1A /* cage.png */,
 				829AD5E121CB7F5700F31E1A /* gabo.png */,
+				9FF6CF3322CBDCB10098098E /* plant.png */,
 				829AD5DF21CB7F5700F31E1A /* max_AO.png */,
 				829AD5E421CB7F5700F31E1A /* max_diffuseD.png */,
 				829AD5E521CB7F5700F31E1A /* max_roughness.png */,
@@ -178,6 +181,7 @@
 				829AD5EF21CB7F5800F31E1A /* max_roughness.png in Resources */,
 				829AD5D821CB7EF500F31E1A /* LaunchScreen.storyboard in Resources */,
 				829AD5F221CB7F5800F31E1A /* max_specular.png in Resources */,
+				9FF6CF3422CBDCB20098098E /* plant.png in Resources */,
 				9FF6CF3222CBD2F10098098E /* mokume.jpg in Resources */,
 				829AD5EA21CB7F5800F31E1A /* window2.png in Resources */,
 				829AD5F121CB7F5800F31E1A /* window3.png in Resources */,
