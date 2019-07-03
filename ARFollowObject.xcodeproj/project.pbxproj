@@ -12,29 +12,15 @@
 		829AD5D321CB7EF100F31E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5D121CB7EF100F31E1A /* Main.storyboard */; };
 		829AD5D521CB7EF500F31E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5D421CB7EF500F31E1A /* Assets.xcassets */; };
 		829AD5D821CB7EF500F31E1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5D621CB7EF500F31E1A /* LaunchScreen.storyboard */; };
-		829AD5E921CB7F5800F31E1A /* max_AO.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5DF21CB7F5700F31E1A /* max_AO.png */; };
-		829AD5EA21CB7F5800F31E1A /* window2.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5E021CB7F5700F31E1A /* window2.png */; };
-		829AD5EB21CB7F5800F31E1A /* gabo.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5E121CB7F5700F31E1A /* gabo.png */; };
-		829AD5EC21CB7F5800F31E1A /* cage.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5E221CB7F5700F31E1A /* cage.png */; };
-		829AD5EE21CB7F5800F31E1A /* max_diffuseD.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5E421CB7F5700F31E1A /* max_diffuseD.png */; };
-		829AD5EF21CB7F5800F31E1A /* max_roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5E521CB7F5700F31E1A /* max_roughness.png */; };
-		829AD5F021CB7F5800F31E1A /* window1.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5E621CB7F5700F31E1A /* window1.png */; };
-		829AD5F121CB7F5800F31E1A /* window3.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5E721CB7F5700F31E1A /* window3.png */; };
-		829AD5F221CB7F5800F31E1A /* max_specular.png in Resources */ = {isa = PBXBuildFile; fileRef = 829AD5E821CB7F5700F31E1A /* max_specular.png */; };
+		9F306B0622CC47B8006D43DC /* memo.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9F306B0522CC47B8006D43DC /* memo.JPG */; };
 		9F41ECBC22CB961D0023B89D /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F41ECBB22CB961D0023B89D /* art.scnassets */; };
-		9F724E0C22CBA7F30044B3CE /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F41ECBD22CBA2A70023B89D /* table.png */; };
 		9F724E1022CBB24D0044B3CE /* FOLDING CHAIR.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9F724E0F22CBB24D0044B3CE /* FOLDING CHAIR.dae */; };
 		9F724E1222CBB3470044B3CE /* modern-ceramic-tiles-texture-awesome-6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9F724E1122CBB3470044B3CE /* modern-ceramic-tiles-texture-awesome-6.jpeg */; };
 		9F724E1522CBC4E50044B3CE /* main.scn in Resources */ = {isa = PBXBuildFile; fileRef = 9F724E1722CBC4E50044B3CE /* main.scn */; };
 		9FF6CF3222CBD2F10098098E /* mokume.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF3122CBD2F00098098E /* mokume.jpg */; };
-		9FF6CF3422CBDCB20098098E /* plant.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF3322CBDCB10098098E /* plant.png */; };
 		9FF6CF3622CBE1760098098E /* masa.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF3522CBE1750098098E /* masa.dae */; };
 		9FF6CF3822CBE3570098098E /* mokume2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF3722CBE3570098098E /* mokume2.jpg */; };
 		9FF6CF3A22CBE5DA0098098E /* wrldfurfre.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF3922CBE5D90098098E /* wrldfurfre.dae */; };
-		9FF6CF4222CBEC780098098E /* indoor plant_02.dae in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF4122CBEC770098098E /* indoor plant_02.dae */; };
-		9FF6CF4422CBECD40098098E /* indoor plant_2_vl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF4322CBECD40098098E /* indoor plant_2_vl.jpg */; };
-		9FF6CF4722CBED100098098E /* indoor plant_2_NOR.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF4522CBED100098098E /* indoor plant_2_NOR.jpg */; };
-		9FF6CF4822CBED100098098E /* indoor plant_2_COL.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FF6CF4622CBED100098098E /* indoor plant_2_COL.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,29 +31,15 @@
 		829AD5D421CB7EF500F31E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		829AD5D721CB7EF500F31E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		829AD5D921CB7EF500F31E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		829AD5DF21CB7F5700F31E1A /* max_AO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = max_AO.png; sourceTree = "<group>"; };
-		829AD5E021CB7F5700F31E1A /* window2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window2.png; sourceTree = "<group>"; };
-		829AD5E121CB7F5700F31E1A /* gabo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gabo.png; sourceTree = "<group>"; };
-		829AD5E221CB7F5700F31E1A /* cage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cage.png; sourceTree = "<group>"; };
-		829AD5E421CB7F5700F31E1A /* max_diffuseD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = max_diffuseD.png; sourceTree = "<group>"; };
-		829AD5E521CB7F5700F31E1A /* max_roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = max_roughness.png; sourceTree = "<group>"; };
-		829AD5E621CB7F5700F31E1A /* window1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window1.png; sourceTree = "<group>"; };
-		829AD5E721CB7F5700F31E1A /* window3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window3.png; sourceTree = "<group>"; };
-		829AD5E821CB7F5700F31E1A /* max_specular.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = max_specular.png; sourceTree = "<group>"; };
+		9F306B0522CC47B8006D43DC /* memo.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = memo.JPG; path = ../../../Downloads/memo.JPG; sourceTree = "<group>"; };
 		9F41ECBB22CB961D0023B89D /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		9F41ECBD22CBA2A70023B89D /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table.png; sourceTree = "<group>"; };
 		9F724E0F22CBB24D0044B3CE /* FOLDING CHAIR.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "FOLDING CHAIR.dae"; path = "../../../Downloads/FOLDING CHAIR/DAE/FOLDING CHAIR.dae"; sourceTree = "<group>"; };
 		9F724E1122CBB3470044B3CE /* modern-ceramic-tiles-texture-awesome-6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "modern-ceramic-tiles-texture-awesome-6.jpeg"; path = "../../../Downloads/FOLDING CHAIR/TEXTURES/modern-ceramic-tiles-texture-awesome-6.jpeg"; sourceTree = "<group>"; };
 		9F724E1622CBC4E50044B3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; name = Base; path = Base.lproj/main.scn; sourceTree = "<group>"; };
 		9FF6CF3122CBD2F00098098E /* mokume.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mokume.jpg; path = ../../../Downloads/mokume.jpg; sourceTree = "<group>"; };
-		9FF6CF3322CBDCB10098098E /* plant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plant.png; path = ../../../Downloads/plant.png; sourceTree = "<group>"; };
 		9FF6CF3522CBE1750098098E /* masa.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = masa.dae; path = ../../../Downloads/masa.dae; sourceTree = "<group>"; };
 		9FF6CF3722CBE3570098098E /* mokume2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mokume2.jpg; path = ../../../Downloads/mokume2.jpg; sourceTree = "<group>"; };
 		9FF6CF3922CBE5D90098098E /* wrldfurfre.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = wrldfurfre.dae; path = ../../../Downloads/wrldfurfre.dae; sourceTree = "<group>"; };
-		9FF6CF4122CBEC770098098E /* indoor plant_02.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = "indoor plant_02.dae"; path = "../../../Downloads/IndoorPotPlant/indoor plant_02.dae"; sourceTree = "<group>"; };
-		9FF6CF4322CBECD40098098E /* indoor plant_2_vl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "indoor plant_2_vl.jpg"; path = "../../../Downloads/IndoorPotPlant/textures/indoor plant_2_vl.jpg"; sourceTree = "<group>"; };
-		9FF6CF4522CBED100098098E /* indoor plant_2_NOR.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "indoor plant_2_NOR.jpg"; path = "../../../Downloads/IndoorPotPlant/textures/indoor plant_2_NOR.jpg"; sourceTree = "<group>"; };
-		9FF6CF4622CBED100098098E /* indoor plant_2_COL.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "indoor plant_2_COL.jpg"; path = "../../../Downloads/IndoorPotPlant/textures/indoor plant_2_COL.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,26 +76,12 @@
 				829AD5CF21CB7EF100F31E1A /* ViewController.swift */,
 				9F724E1722CBC4E50044B3CE /* main.scn */,
 				9F41ECBB22CB961D0023B89D /* art.scnassets */,
-				829AD5E621CB7F5700F31E1A /* window1.png */,
-				829AD5E021CB7F5700F31E1A /* window2.png */,
-				829AD5E721CB7F5700F31E1A /* window3.png */,
-				9F41ECBD22CBA2A70023B89D /* table.png */,
-				829AD5E221CB7F5700F31E1A /* cage.png */,
-				829AD5E121CB7F5700F31E1A /* gabo.png */,
-				9FF6CF3322CBDCB10098098E /* plant.png */,
-				829AD5DF21CB7F5700F31E1A /* max_AO.png */,
 				9FF6CF3922CBE5D90098098E /* wrldfurfre.dae */,
-				829AD5E421CB7F5700F31E1A /* max_diffuseD.png */,
-				829AD5E521CB7F5700F31E1A /* max_roughness.png */,
-				829AD5E821CB7F5700F31E1A /* max_specular.png */,
 				9FF6CF3122CBD2F00098098E /* mokume.jpg */,
 				9FF6CF3722CBE3570098098E /* mokume2.jpg */,
 				9F724E0F22CBB24D0044B3CE /* FOLDING CHAIR.dae */,
-				9FF6CF4122CBEC770098098E /* indoor plant_02.dae */,
-				9FF6CF4322CBECD40098098E /* indoor plant_2_vl.jpg */,
+				9F306B0522CC47B8006D43DC /* memo.JPG */,
 				9FF6CF3522CBE1750098098E /* masa.dae */,
-				9FF6CF4622CBED100098098E /* indoor plant_2_COL.jpg */,
-				9FF6CF4522CBED100098098E /* indoor plant_2_NOR.jpg */,
 				9F724E1122CBB3470044B3CE /* modern-ceramic-tiles-texture-awesome-6.jpeg */,
 				829AD5D421CB7EF500F31E1A /* Assets.xcassets */,
 				829AD5D121CB7EF100F31E1A /* Main.storyboard */,
@@ -192,32 +150,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF6CF4422CBECD40098098E /* indoor plant_2_vl.jpg in Resources */,
-				829AD5F021CB7F5800F31E1A /* window1.png in Resources */,
-				829AD5EC21CB7F5800F31E1A /* cage.png in Resources */,
-				9FF6CF4722CBED100098098E /* indoor plant_2_NOR.jpg in Resources */,
 				9F724E1222CBB3470044B3CE /* modern-ceramic-tiles-texture-awesome-6.jpeg in Resources */,
 				9F41ECBC22CB961D0023B89D /* art.scnassets in Resources */,
-				829AD5EF21CB7F5800F31E1A /* max_roughness.png in Resources */,
 				829AD5D821CB7EF500F31E1A /* LaunchScreen.storyboard in Resources */,
-				829AD5F221CB7F5800F31E1A /* max_specular.png in Resources */,
-				9FF6CF3422CBDCB20098098E /* plant.png in Resources */,
 				9FF6CF3222CBD2F10098098E /* mokume.jpg in Resources */,
-				829AD5EA21CB7F5800F31E1A /* window2.png in Resources */,
-				829AD5F121CB7F5800F31E1A /* window3.png in Resources */,
-				9FF6CF4822CBED100098098E /* indoor plant_2_COL.jpg in Resources */,
 				9F724E1022CBB24D0044B3CE /* FOLDING CHAIR.dae in Resources */,
-				829AD5EB21CB7F5800F31E1A /* gabo.png in Resources */,
 				829AD5D521CB7EF500F31E1A /* Assets.xcassets in Resources */,
 				9FF6CF3622CBE1760098098E /* masa.dae in Resources */,
 				9FF6CF3A22CBE5DA0098098E /* wrldfurfre.dae in Resources */,
-				829AD5EE21CB7F5800F31E1A /* max_diffuseD.png in Resources */,
-				829AD5E921CB7F5800F31E1A /* max_AO.png in Resources */,
 				9FF6CF3822CBE3570098098E /* mokume2.jpg in Resources */,
+				9F306B0622CC47B8006D43DC /* memo.JPG in Resources */,
 				829AD5D321CB7EF100F31E1A /* Main.storyboard in Resources */,
 				9F724E1522CBC4E50044B3CE /* main.scn in Resources */,
-				9FF6CF4222CBEC780098098E /* indoor plant_02.dae in Resources */,
-				9F724E0C22CBA7F30044B3CE /* table.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

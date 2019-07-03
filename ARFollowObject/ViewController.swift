@@ -9,6 +9,7 @@
 import UIKit
 import SceneKit
 import ARKit
+import CoreMotion
 
 class ViewController: UIViewController, ARSCNViewDelegate {
 
@@ -17,7 +18,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     private var nodeDic:Dictionary<String, simd_float4x4> = [:]
     
     private var fixedFlag:Bool = true
+    private var zposiFlag:Bool = false
     
+    let manager = CMMotionManager()//加速度マネ
+
     // Action: UISwitch
     @IBAction func switchFixedPosition(_ sender: UISwitch) {
         if sender.isOn {
@@ -43,75 +47,105 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Set the scene to the view
         sceneView.scene = scene
         
+        
+        //加速度
+        if manager.isAccelerometerAvailable {
+            manager.accelerometerUpdateInterval = 1 / 10; // 10Hz
+            let accelerometerHandler: CMAccelerometerHandler = {
+                [weak self] data, error in
+//                self?.xLabel.text = "".appendingFormat("x %.4f", data!.acceleration.x)
+//                self?.yLabel.text = "".appendingFormat("y %.4f", data!.acceleration.y)
+//                self?.zLabel.text = "".appendingFormat("z %.4f", data!.acceleration.z)
+                if data!.acceleration.z > 0{
+                    self?.zposiFlag = true
+                }else{
+                    self?.zposiFlag = false
+                }
+            }
+            manager.startAccelerometerUpdates(to: OperationQueue.current!,
+                                              withHandler: accelerometerHandler)
+        }
+        
         // add a tap gesture recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         sceneView.addGestureRecognizer(tapGesture)
     }
     
+    var count:UInt32 = 0
     @objc func handleTap(_ gestureRecognize: UIGestureRecognizer) {
         
         // check what nodes are tapped
         let p = gestureRecognize.location(in: sceneView)
         let hitResults = sceneView.hitTest(p, options: [:])
         
-        if hitResults.count > 0 {
-            // retrieved the first clicked object
-            let result: AnyObject = hitResults[0]
-            
-            // get AR Camera Node
-            let cameraNode = sceneView.pointOfView!
-            
-            let followGeometryNode = result.node! as SCNNode
-            let followNode = followGeometryNode.parent!
-            let nodeName = followNode.name!
-            let nodeInfo = nodeDic[nodeName]
-            
-            if (nodeInfo != nil) {
+//        if (zposiFlag != false){
+        
+            if hitResults.count > 0 {
+                // retrieved the first clicked object
+                let result: AnyObject = hitResults[0]
                 
-                sceneView.scene.rootNode.addChildNode(followNode)
+                // get AR Camera Node
+                let cameraNode = sceneView.pointOfView!
                 
-                if(fixedFlag != false){
-                    followNode.simdWorldTransform = nodeDic[nodeName]!
-                }else{
-                    followNode.simdTransform = cameraNode.simdConvertTransform(followNode.simdTransform, to: nil)
-                    //followNode.simdEulerAngles = simd_float3()
+                let followGeometryNode = result.node! as SCNNode
+                let followNode = followGeometryNode.parent!
+                let nodeName = followNode.name!
+                let nodeInfo = nodeDic[nodeName]
+                
+                if (nodeInfo != nil) {
+                    
+                    sceneView.scene.rootNode.addChildNode(followNode)
+                    
+                    if(fixedFlag != false){
+                        followNode.simdWorldTransform = nodeDic[nodeName]!
+                    }else{
+                        followNode.simdTransform = cameraNode.simdConvertTransform(followNode.simdTransform, to: nil)
+                        //followNode.simdEulerAngles = simd_float3()
+                    }
+                    
+                    nodeDic[nodeName] = nil
+                } else {
+                    // Save Position
+                    nodeDic[nodeName] = followNode.simdWorldTransform
+                    
+                    cameraNode.addChildNode(followNode)
+                    
+                    followNode.simdTransform = cameraNode.simdConvertTransform(followNode.simdTransform, from: nil)
                 }
                 
-                nodeDic[nodeName] = nil
-            } else {
-                // Save Position
-                nodeDic[nodeName] = followNode.simdWorldTransform
+                // get its material
+                let material = result.node.geometry!.firstMaterial!
                 
-                cameraNode.addChildNode(followNode)
-                
-                followNode.simdTransform = cameraNode.simdConvertTransform(followNode.simdTransform, from: nil)
-            }
-            
-            // get its material
-            let material = result.node.geometry!.firstMaterial!
-            
-            // highlight it
-            SCNTransaction.begin()
-            SCNTransaction.animationDuration = 0.5
-            
-            // on completion - unhighlight
-            SCNTransaction.completionBlock = {
+                // highlight it
                 SCNTransaction.begin()
                 SCNTransaction.animationDuration = 0.5
                 
-                material.emission.contents = UIColor.black
+                // on completion - unhighlight
+                SCNTransaction.completionBlock = {
+                    SCNTransaction.begin()
+                    SCNTransaction.animationDuration = 0.5
+                    
+                    material.emission.contents = UIColor.black
+                    
+                    SCNTransaction.commit()
+                }
+                
+                if(nodeInfo != nil){
+                    material.emission.contents = UIColor.white
+                }else{
+                    material.emission.contents = UIColor.blue
+                }
                 
                 SCNTransaction.commit()
+                
+                zposiFlag = false
+
             }
-            
-            if(nodeInfo != nil){
-                material.emission.contents = UIColor.white
-            }else{
-                material.emission.contents = UIColor.blue
-            }
-            
-            SCNTransaction.commit()
-        }
+//        }else{
+//            print("nomal touch!" + "\(count)")
+//            count = count + 1
+//        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
